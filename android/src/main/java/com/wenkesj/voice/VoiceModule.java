@@ -107,6 +107,7 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
     intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 8.64e+7);
     intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, getLocale(this.locale));
     intent.putExtra("android.speech.extra.DICTATION_MODE", true);
+    intent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, false);
     speech.startListening(intent);
   }
 
