@@ -57,7 +57,7 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
     speech = SpeechRecognizer.createSpeechRecognizer(this.reactContext);
     speech.setRecognitionListener(this);
 
-    final Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+    final Intent intent = new Intent(RecognizerIntent.ACTION_VOICE_SEARCH_HANDS_FREE);
 
     // Load the intent with options from JS
     ReadableMapKeySetIterator iterator = opts.keySetIterator();
